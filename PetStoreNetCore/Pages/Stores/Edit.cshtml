@@ -1,0 +1,36 @@
+﻿@page "{storeId:int?}"
+
+@model PetStoreNetCore.Pages.Stores.EditModel
+@{
+}
+
+<h2>Editing @Model.Store.StoreName</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Store.Id" />
+    <div class="form-group">
+        <label asp-for="Store.StoreName"></label>
+        <input asp-for="Store.StoreName" class="form-control" />
+        <span class="text-danger" asp-validation-for="Store.StoreName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Store.StreetName"></label>
+        <input asp-for="Store.StreetName" class="form-control" />
+        <span class="text-danger" asp-validation-for="Store.StreetName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Store.City"></label>
+        <input asp-for="Store.City" class="form-control" />
+        <span class="text-danger" asp-validation-for="Store.City"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for= "Store.Country"></label>
+        <select asp-for="Store.Country" class="form-control"
+        asp-items="Model.Countries"></select>
+        <span class="text-danger" asp-validation-for="Store.Country"></span>
+    </div>
+    
+
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

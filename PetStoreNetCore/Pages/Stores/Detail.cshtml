@@ -1,0 +1,32 @@
+﻿
+@page "{storeId:int}"
+
+@model PetStoreNetCore.Pages.Stores.DetailModel
+@{
+}
+
+@if(Model.Message != null)
+{
+    <div class="alert alert-info">@Model.Message</div>
+}
+
+<h2>@Model.Store.StoreName</h2>
+<div>
+    ID: @Model.Store.Id
+</div>
+<div>
+    Location: @Model.Store.StreetName
+
+</div>
+<div>
+    City: @Model.Store.City
+</div>
+<div>
+    City: @Model.Store.Country
+</div>
+
+
+
+<a asp-page="./" class="btn btn-primary">All Stores</a>
+
+

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStoreNetCore.Core", "Pet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore.Data", "PetStore.Data\PetStore.Data.csproj", "{7AA89771-75F6-4ECC-84F6-CD4AA914B6F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStoreNetCore", "PetStoreNetCore\PetStoreNetCore.csproj", "{544E9A19-07FD-4962-8899-4CA19D2CAE1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStoreNetCore", "PetStoreNetCore\PetStoreNetCore.csproj", "{544E9A19-07FD-4962-8899-4CA19D2CAE1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,26 @@
+﻿@page "{storeID}"
+@model PetStoreNetCore.Pages.Stores.DeleteModel
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+</head>
+<body>
+    <div class="alert alert-danger">
+        Are you sure you want to delete @Model.StoreToDelete.StoreName?
+    </div>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Yes!</button>
+        <a asp-page="List" class="btn btn-default">Cancel</a>
+    </form>
+</body>
+</html>
+
