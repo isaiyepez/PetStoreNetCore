@@ -74,5 +74,10 @@ namespace PetStore.Data
 
             return store;
         }
+
+        public int GetCountOfStores()
+        {
+            return _stores.Count;
+        }
     }
 }

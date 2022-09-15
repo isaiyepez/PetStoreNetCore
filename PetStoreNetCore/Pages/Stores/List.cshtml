@@ -21,43 +21,11 @@
     </div>
 </form>
 
-<table class="table">
+
     @foreach (var store in Model.Stores)
     {
-        <tr>
-            <td>@store.StoreName </td>
-            <td>@store.StreetName</td>
-            <td>@store.City</td>
-            <td>@store.Country</td>
-            <td>@store.DateCreated</td>
-            <td>
-                <a class="btn btn-lg"
-               asp-page="./Detail"
-               asp-route-storeId="@store.Id">
-                    See detail
-                    <i class="fas fa-search"></i>
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-lg"
-               asp-page="./Edit"
-               asp-route-storeId="@store.Id">
-                    Edit
-                    <i class="fas fa-edit"></i>
-                </a>
-
-            </td>
-             <td>
-                <a class="btn btn-lg"
-               asp-page="./Delete"
-               asp-route-storeId="@store.Id">
-                    Edit
-                    <i class="fas fa-trash"></i>
-                </a>
-
-            </td>
-        </tr>
+       <partial name="_Summary" model="store"/>
     }
-</table>
+
 
 <a asp-page="./Edit" class="btn btn-primary">Add New</a>

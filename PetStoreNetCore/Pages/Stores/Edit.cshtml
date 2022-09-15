@@ -28,9 +28,11 @@
         <select asp-for="Store.Country" class="form-control"
         asp-items="Model.Countries"></select>
         <span class="text-danger" asp-validation-for="Store.Country"></span>
-    </div>
-    
-
+    </div>   
 
     <button type="submit" class="btn btn-primary">Save Changes</button>
 </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

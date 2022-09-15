@@ -34,6 +34,11 @@ namespace PetStore.Data
             return store;
         }
 
+        public int GetCountOfStores()
+        {
+            return _db.Stores.Count();
+        }
+
         public IEnumerable<Store> GetPetStores()
         {
             return _db.Stores;

@@ -15,6 +15,7 @@ namespace PetStore.Data
         Store Add(Store newStore);
         Store Update(Store store);
         Store Delete(int id);
+        int GetCountOfStores();
         int Commit();
     }
 
